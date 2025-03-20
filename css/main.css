@@ -1,0 +1,41 @@
+body {
+    font-family: "Hanken Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(208 208 208) !important;
+    background-color: rgb(27 27 27) !important;
+}
+
+strong {
+    font-weight: 900;
+}
+
+h1, h2, h3, h4 {
+ font-weight: 900;
+}
+
+h5 {
+    color: rgb(188 50 50) !important;
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../img/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.visible {
+    display: block;
+}
+
+.btn-form {
+    background-color: rgb(147 149 152) !important;
+}
+
+.invisible {
+    display: none;
+}
