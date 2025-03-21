@@ -2,6 +2,7 @@
 <html lang="pt-br" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Primitive Audio</title>
 
     <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96"/>
@@ -168,7 +169,7 @@
 
     <div class="row justify-content-center">
         <div class="col-12 mt-5">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7MnAO4BcoYstcz2mHdD8ea?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7MnAO4BcoYstcz2mHdD8ea?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div><!--end col-->
     </div><!--end row-->
 </div>
@@ -213,24 +214,22 @@
 </div>
 
 
-<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+<script type="application/javascript">
+    const hash = window.location.hash;
 
-    <script type="application/javascript">
-        const hash = window.location.hash;
+    if (hash.includes('form')) {
+        const successMessage = document.getElementById('successMessage');
+        successMessage.classList.remove('invisible');
+        successMessage.classList.add('visible');
 
-        if (hash.includes('form')) {
-            const successMessage = document.getElementById('successMessage');
-            successMessage.classList.remove('invisible');
-            successMessage.classList.add('visible');
-
-            const formWrapper = document.getElementById('formWrapper');
-            formWrapper.classList.remove('visible');
-            formWrapper.classList.add('invisible');
-        }
-    </script>
+        const formWrapper = document.getElementById('formWrapper');
+        formWrapper.classList.remove('visible');
+        formWrapper.classList.add('invisible');
+    }
+</script>
 </body>
 </html>
